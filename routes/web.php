@@ -20,38 +20,42 @@ Route::get('/', function () {
 //ruta de paises 
 Route::get('paises', function(){
     $paises=[
-        "colombia" => [
-            "capital"=>" bogota",
+        "Colombia" => [
+            "capital"=>" Bogota",
             "moneda"=>"peso",
             "poblacion"=> 51.6,
             "ciudades"=>[
-                "medellin",
-                "cali",
-                "barranquilla"
-
-        ]
+                "Medellin",
+                "Cali",
+                "Barranquilla",
+                "Tolima"
+            ]
         ],
-        "peru" => [
-            "capital"=> "lima",
+        
+
+        "Peru" => [
+            "capital"=> "Lima",
             "moneda"=> "sol",
             "poblacion"=> 32.97,
             "ciudades"=>[
-                "cusco",
-                "arequipa",
-                "huancayo"
+                "Cusco",
+                "Arequipa",
+                "Huancayo",
+                "Cuasco"
 
             ]
         ],
-        "paraguay" =>[
-            "capital"=> "asuncion",
+        "Paraguay" =>[
+            "capital"=> "Asuncion",
             "moneda"=> "guarani",
             "poblacion"=> 7.133,
             "ciudades"=>[
-                "ciudad del este",
-                "encarnacion",
-                "fuerte olimpo"
+                "Ciudad del este",
+                "Encarnacion",
+                "Fuerte olimpo"
             ]
         ]
+        
     ];
     //mostrar la vista de paises 
     return view('paises')
